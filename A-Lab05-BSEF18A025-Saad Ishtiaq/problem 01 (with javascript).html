@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+    <style>
+        .container1{
+            width: 100%;
+            height: 150px;
+            background-color: red;
+        }
+        .container2{
+            width: 100%;
+            height: 150px;
+            background-color: yellow;
+        }
+        .container3{
+            width: 100%;
+            height: 150px;
+            background-color: green;
+        }
+        .container4{
+            width: 100%;
+            height: 150px;
+            background-color: blue;
+        }
+    </style>
+
+<script >
+	window.onload=function()
+	{
+		const btn1=document.getElementById("box1");
+         btn1.addEventListener('click',function(){
+        if (btn1.style.backgroundColor=="black") {
+              btn1.style.backgroundColor="red";
+      }      
+      else
+      {
+        btn1.style.backgroundColor="black";
+      }
+    })
+    const btn2=document.getElementById("box2");
+    btn2.addEventListener('click',function(){
+      if (btn2.style.backgroundColor=="black") {
+        btn2.style.backgroundColor="yellow";
+      }      
+      else
+      {
+        btn2.style.backgroundColor="black";
+      }
+    })
+    const btn3=document.getElementById("box3");
+    btn3.addEventListener('click',function(){
+      if (btn3.style.backgroundColor=="black") {
+        btn3.style.backgroundColor="green";
+      }      
+      else
+      {
+        btn3.style.backgroundColor="black";
+      }
+    })
+    const btn4=document.getElementById("box4");
+    btn4.addEventListener('click',function(){
+      if (btn4.style.backgroundColor=="black") {
+        btn4.style.backgroundColor="blue";
+      }      
+      else
+      {
+        btn4.style.backgroundColor="black";
+      }
+    })
+  }
+</script>
+
+
+    <title>Problem 01 with javascript</title>
+</head>
+<body>
+    <div class="container1" id="box1"> </div>
+    
+    <div class="container2" id="box2"> </div>
+    
+    <div class="container3" id="box3"> </div>
+    
+    <div class="container4" id="box4"> </div>
+
+
+</body>
+</html>

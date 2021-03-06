@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script>
+        window.onload = function(){
+
+            const dis = window.document.getElementById('my-button');
+            dis.addEventListener('click', function() {
+                var node = document.createElement("li");               
+                var textnode = document.createTextNode("Water");        
+                node.appendChild(textnode);                              
+                document.getElementById("displayList").appendChild(node);        
+            })
+        }
+    </script>
+
+
+
+
+
+    <title>Problem 03</title>
+</head>
+<body>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <ul id="displayList">
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+
+    <p>Click on the button to append and item to the end of the list</p>
+    <button id="my-button"> Try it!</button>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <title>Problem 07</title>
+
+
+        <script>
+
+            window.onload= function()
+            {
+                let getbutton= document.getElementById("butn");
+                getbutton.addEventListener('click', function(){
+                    let fname=document.getElementById("first").value;
+                    let lname=document.getElementById("last").value;
+                    let sub=document.getElementById("sbutn").value;
+                    document.getElementById("display").innerHTML= fname + "<br>" + lname + "<br>"+ sub;                   
+                })
+            }
+        </script>
+    </head>
+    <body>
+        <br>
+        <br>
+        <br>
+
+        <form>
+            <label>First Name:</label>
+            <input type="text" id="first"></input><br>
+            <label>Last Name:</label>
+            <input type="text" id="last"></input><br>
+
+        </form>
+		
+            <button class="btn btn-primary" id="sbutn" value="Submit">Submit</button>
+        <br>
+        <p>Click the "Get Values" button to return the value of each element in the form.</p><br>
+        <div id="display"></div>
+        <br>
+        <button class="btn btn-primary" id="butn">Get Values</button>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+@most-used-color: #4cd1a988; //declaring a variable of name most-used-color
+@border-style-dotted: dotted; //declaring a variable of name border-style-dotted
+
+//using user-defined variables
+h1 {
+  background-color: @most-used-color;
+  border: @border-style-dotted;
+}
+
+
+//Nesting is done in LESS
+li {
+  color: rgb(12, 9, 9);
+  line-height: 40px;
+  text-shadow: 1px 1px 0px #010202;
+  &:hover {
+    background-color: rgb(228, 148, 0);
+    color: rgb(3, 39, 117);
+  }
+}
+
+
+//declaring parametric mixins 
+.mystyle(@width; @style; @color) {
+  border: @width @style @color;
+}
+//using parametric mixins
+ul {
+  .mystyle(7px; solid; green); 
+}

@@ -1,0 +1,16 @@
+h1 {
+  background-color: #4cd1a988;
+  border: dotted;
+}
+li {
+  color: #0c0909;
+  line-height: 40px;
+  text-shadow: 1px 1px 0px #010202;
+}
+li:hover {
+  background-color: #e49400;
+  color: #032775;
+}
+ul {
+  border: 7px solid green;
+}
